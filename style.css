@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Denk+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Denk+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Anton&family=Denk+One&display=swap');
+
+html{
+    overflow-x: hidden;
+}
+  
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #D0F7BE;
+}
+
+.denk-one-regular {
+    font-family: "Denk One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+nav{
+    background-color: #D0F7BE;
+}
+
+.nav-link{
+    font-family: "Denk One", "sans-serif";
+    margin: 20px;
+}
+
+.container-fluid{
+    background-color: #D0F7BE;
+}
+
+.logo-hero{
+    max-height: 290px;
+}
+
+.titulo-1-about{
+    font-family: "Denk One", "sans-serif";
+}
+
+.parrafo-about{
+    font-family: "Alice", serif;
+}
+
+.titulo-2-about{
+    font-family: "Anton", sans-serif;
+}
