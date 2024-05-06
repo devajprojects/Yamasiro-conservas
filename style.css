@@ -1,60 +1,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Denk+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Denk+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Anton&family=Denk+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Denk+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Anton&family=Denk+One&display=swap");
 
-html{
-    overflow-x: hidden;
+html {
+  overflow-x: hidden;
 }
-  
-body{
-    max-width: 100%;
-    overflow-x: hidden;
-    background-color: #D0F7BE;
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #d0f7be;
 }
 
 .denk-one-regular {
-    font-family: "Denk One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Denk One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .alice-regular {
-    font-family: "Alice", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .anton-regular {
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}  
-
-nav{
-    background-color: #D0F7BE;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.nav-link{
-    font-family: "Denk One", "sans-serif";
-    margin: 20px;
+nav {
+  background-color: #d0f7be;
 }
 
-.container-fluid{
-    background-color: #D0F7BE;
+.nav-link {
+  font-family: "Denk One", "sans-serif";
+  margin: 20px;
 }
 
-.logo-hero{
-    max-height: 290px;
+.container-fluid {
+  background-color: #d0f7be;
 }
 
-.titulo-1-about{
-    font-family: "Denk One", "sans-serif";
+.logo-hero {
+  max-height: 290px;
 }
 
-.parrafo-about{
-    font-family: "Alice", serif;
+.titulo-1-about {
+  font-family: "Denk One", "sans-serif";
 }
 
-.titulo-2-about{
-    font-family: "Anton", sans-serif;
+.parrafo-about {
+  font-family: "Alice", serif;
 }
+
+.titulo-2-about {
+  font-family: "Anton", sans-serif;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  background-color: #f8cf97; /* Cambiar el color de fondo del cuerpo de la tarjeta */
+}
+
+aside {
+  background-color: #f8cf97;
+}
+
+aside a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-with-text {
+    display: flex;
+    align-items: center;
+    padding: 8px; /* Ajusta el padding según sea necesario */
+    margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+  }
+  
+.icon-with-text img {
+    max-width: 50px;
+    margin-right: 10px; /* Ajusta el margen derecho del icono según sea necesario */
+  }
+
+.my-custom-margin {
+  margin-right: 5px; /* Ajusta la distancia horizontal entre los iconos según lo necesites */
+  margin-left: 5px; /* Ajusta la distancia horizontal entre los iconos según lo necesites */
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
