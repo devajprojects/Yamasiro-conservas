@@ -58,36 +58,43 @@ const cardsData = [
 
 // Función para crear elementos de tarjeta con dos imágenes una al lado de la otra
 function createCardElement(card) {
-  const cardCol = document.createElement("div");
-  cardCol.classList.add("col-lg-4", "col-md-6", "col-sm-12", "mb-4"); // Cambiado a col-lg-4 para mostrar tres tarjetas por fila en pantallas grandes, col-md-6 para mostrar dos tarjetas por fila en pantallas medianas, y col-sm-12 para mostrar una tarjeta por fila en pantallas pequeñas
-
-  const cardDiv = document.createElement("div");
-  cardDiv.classList.add("card", "h-auto",); // Altura automática de la tarjeta para que se ajuste al contenido
-
-  const cardBody = document.createElement("div");
-  cardBody.classList.add("card-body", "px-3", "py-3");
-
-  const imagesContainer = document.createElement("div");
-  imagesContainer.classList.add("d-flex", "justify-content-center"); // Establecer diseño en línea y alineación al centro
-
-  const image1 = document.createElement("img");
-  image1.src = card.imageSrc1; // Usar card.imageSrc1 para la primera imagen
-  image1.alt = card.alt1;
-  image1.classList.add("card-img-top", "mr-2", "img-fluid"); // Agregar clase img-fluid para hacer la imagen responsiva
-
-  const image2 = document.createElement("img");
-  image2.src = card.imageSrc2; // Usar card.imageSrc2 para la segunda imagen
-  image2.alt = card.alt2;
-  image2.classList.add("card-img-top", "img-fluid"); // Agregar clase img-fluid para hacer la imagen responsiva
-
-  imagesContainer.appendChild(image1);
-  imagesContainer.appendChild(image2);
-  cardBody.appendChild(imagesContainer);
-  cardDiv.appendChild(cardBody);
-  cardCol.appendChild(cardDiv);
-
-  return cardCol;
-}
+    const cardCol = document.createElement("div");
+    cardCol.classList.add("col-12", "col-md-6", "col-lg-4", "mb-4"); // Usar col-12 para que las tarjetas ocupen el ancho completo en pantallas pequeñas
+  
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("card", "h-100"); // Altura 100% de la tarjeta
+  
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body", "px-3", "py-3");
+  
+    const imagesContainer = document.createElement("div");
+    imagesContainer.classList.add("d-flex", "justify-content-center"); // Establecer diseño en línea y alineación al centro
+  
+    const imageContainer1 = document.createElement("div");
+    imageContainer1.classList.add("w-100", "mb-2"); // Establecer anchura al 100% y margen inferior
+    const image1 = document.createElement("img");
+    image1.src = card.imageSrc1; // Usar card.imageSrc1 para la primera imagen
+    image1.alt = card.alt1;
+    image1.classList.add("img-fluid"); // Hacer la imagen responsiva
+  
+    const imageContainer2 = document.createElement("div");
+    imageContainer2.classList.add("w-100"); // Establecer anchura al 100%
+    const image2 = document.createElement("img");
+    image2.src = card.imageSrc2; // Usar card.imageSrc2 para la segunda imagen
+    image2.alt = card.alt2;
+    image2.classList.add("img-fluid"); // Hacer la imagen responsiva
+  
+    imageContainer1.appendChild(image1);
+    imageContainer2.appendChild(image2);
+    imagesContainer.appendChild(imageContainer1);
+    imagesContainer.appendChild(imageContainer2);
+    cardBody.appendChild(imagesContainer);
+    cardDiv.appendChild(cardBody);
+    cardCol.appendChild(cardDiv);
+  
+    return cardCol;
+  }
+  
 
 // Cargar las tarjetas cuando se cargue la página
 window.addEventListener("load", function () {
