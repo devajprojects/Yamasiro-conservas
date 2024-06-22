@@ -61,10 +61,13 @@ nav {
 
 .card {
   border: none;
+  background-color: #d0f7be !important;
+  border-radius: 103px 171px 156px 129px !important;
 }
 
 .card-body {
   background-color: #f8cf97; /* Cambiar el color de fondo del cuerpo de la tarjeta */
+  border-radius: 103px 171px 156px 129px
 }
 
 aside {
