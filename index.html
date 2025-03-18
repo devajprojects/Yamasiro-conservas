@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      emailjs.init('1kKjt4l-hmHGv_vTs')
+    </script>
+
     <title>Yamasiro Conservas</title>
   </head>
   <body>
@@ -185,19 +193,44 @@
       </div>
     </aside>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid p-0">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <img src="assets/argentina 2.png" alt="" class="img-fluid" />
           </div>
-          <div class="col-md-6 p-5">
+          <div class="col-md-6 p-3">
             <div class="container-fluid">
               <div class="text-center">
-                <a href="mailto:ventaspamela@conservasyamasiro.com" class="icon-with-text">
+                <!--<a href="mailto:ventaspamela@conservasyamasiro.com" class="icon-with-text">
                   <img src="assets/mail footer.png" alt="mail" class="img-fluid">
                   <p>ventaspamela@conservasyamasiro.com</p>
-                </a>
+                </a>-->
+                <form id="form">
+                  <h3>Contactanos</h3><hr>
+
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@ejemplo.com" name="email" required autocomplete="off"></input>
+                    <label for="email">Email</label>
+                    <div class="error" id="errorEmail"></div>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input class="form-control" placeholder="Escribe tu nombre aquí" type="text" id="name" name="name" required autocomplete="off"></input>
+                    <label for="name">Nombre completo</label>
+                    <div class="error" id="errorNombre"></div>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Escribe tu mensaje aquí" id="message" name="message" required autocomplete="off"></textarea>
+                    <label for="message">Mensaje</label>
+                    <div class="error" id="errorMensaje"></div>
+                  </div>
+                  <div class="d-grid gap-2">
+                    <input type="submit" id="button" class="btn btn-success mb-4" value="Enviar"></input>
+                  </div>
+                </form>
+
                 <a href="https://www.google.com/maps/search/?api=1&query=Castelar,+Buenos+Aires,+Argentina" class="icon-with-text">
                   <img src="assets/ubicacion footer.png" alt="ubicacion" class="img-fluid">
                   <p>Castelar, Buenos Aires, Argentina</p>
